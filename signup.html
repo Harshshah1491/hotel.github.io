@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>jQuery Validation - Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ <script src="signup.js"></script> 
+  <style>
+.container{
+    padding: 55px;
+}
+  </style>
+
+</head>
+<body background="images/back.png">
+	<div class = "container">
+    	<div class = "col-sm-6 col-md-offset-3">
+        	<div class = "panel panel-primary">
+            	<div class = "panel-heading">
+                	Registration
+                </div>
+                <div class = "panel-body">
+                	<form id = "registration">
+                    	<input type = "text" class = "form-control" id="name" name = "username" placeholder = "Full-name"/>
+                        <br/>
+                        <input type = "text" class = "form-control" id="email" name = "email" placeholder = "Email"/>
+                        <br/>
+                        <input type = "password" class = "form-control" id="password" name = "password" placeholder = "Password" id = "password"/>
+                        <br/>
+                        <input type = "password" class = "form-control" id="confirm"name = "confirm" placeholder = "Confirm Password"/>
+                        <br/>
+                        <input type = "text" class = "form-control" id="fname" name = "fname" placeholder = "First Name"/>
+                        <br/>
+                        <input type = "text" class = "form-control" id="lname" name = "lname" placeholder = "Last Name"/>
+                        <br/>
+                        <div class = "gender">
+							<label class="radio-inline"><input type="radio" name="gender" class = "form-contorl"/>Male</label>
+							<label class="radio-inline"><input type="radio" name="gender" class = "form-contorl"/>Female</label>       
+                        </div>
+                        <br/>
+                        
+                      
+                    
+                        <select class = "form-control" name = "country" id="county">
+                        	<option value="0" selected="" disabled="">--SELECT--</option>
+                            <option>India</option>
+                            <option>Australia</option>
+                            <option>Japan</option>
+                            <option>China</option>
+                            <option>South Africa</option>
+                        </select>
+                        <br/>
+                        <textarea class = "form-control" id="address" name = "address" placeholder="Address"></textarea>
+                        <br/>
+                        <button type = "submit" class = "btn btn-primary" id="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
